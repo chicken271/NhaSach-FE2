@@ -1,0 +1,77 @@
+.footer {
+  padding: 2rem 0;
+}
+
+.footer h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 0.25rem;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #0056b3;
+}
+
+@media (min-width: 300px) {
+  footer .col-12 {
+    max-width: 33.33333333%;
+  }
+
+}
+
+ul li{
+  border-bottom: 1px solid #ececec;
+  position: relative;
+  padding: 7px 0px 7px 0px;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li::before {
+  position: relative;
+  /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+  content: "";
+  display: inline-block;
+  /* By using an em scale, the arrows will size with the font */
+  width: 0.4em;
+  height: 0.4em;
+  border-right: 0.2em solid gray;
+  border-top: 0.2em solid gray;
+  transform: rotate(45deg);
+  margin-right: 0.5em;
+}
+
+/* Change color */
+li:hover {
+color: gray; /* For the text */
+}
+li:hover::before {
+border-color: gray; /* For the arrow (which is a border) */
+}
+/**/
+
+.dark-gray-bg{
+  background-color: #424242;
+}
+
+.rights-text{
+  color: #FFFFFF80;
+  font-size: smaller;
+}

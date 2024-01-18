@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://via.placeholder.com/150x50" alt="Logo" width="150" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link"  [routerLink]="['/']">Trang chủ</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Giải pháp cung cấp
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
+          <li><a class="dropdown-item"  [routerLink]="['/solutions/solution1']">Giải pháp 1</a></li>
+          <li><a class="dropdown-item"  [routerLink]="['/solutions/solution2']">Giải pháp 2</a></li>
+          <li><a class="dropdown-item"  [routerLink]="['/solutions/solution3']">Giải pháp 3</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  [routerLink]="['/news']">Tin tức</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  [routerLink]="['/jobs']">Tuyển dụng</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tel:0963822522">Liên hệ</a>
+      </li>
+      <li class="nav-item">
+        <button class="contact-btn" routerLinkActive="active" [routerLink]="['/contact']">Đặt lịch hẹn</button>
+      </li>
+    </ul>
+  </div>
+</nav>

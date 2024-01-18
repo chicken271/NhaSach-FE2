@@ -1,0 +1,65 @@
+/* Navbar container */
+.container-fluid {
+  padding: 15px;
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Navbar links */
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+/* Active link */
+.nav-link.active {
+  color: #ff0000; /* Change to your desired active link color */
+}
+
+/* Responsiveness - collapse Navbar on smaller screens */
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    padding-left: 20px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.navbar-nav .nav-link {
+  white-space: nowrap;
+}
+
+a {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-btn{
+  background-color: rgb(242, 102, 37);
+  color: white;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  height: 36px;
+  width: 120px;
+}
